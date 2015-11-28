@@ -1,0 +1,72 @@
+.title-photo{
+	font-family: 'Lato', serif;
+	font-size: 115px;
+	font-weight: 900;
+	position: relative;
+	top: -240px;
+	left: 450px;
+	max-height: 0px;
+}
+
+.cadre_photo{
+	position: relative;
+    left: 376.8px;
+	top: -74px;
+}
+
+.photo .main-photo div.slick-slide {
+    background: white;
+}
+
+.photo .main-photo img {
+    max-width: 100%;
+    max-height: 637px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.photo .main-photo {
+    margin-bottom: 100px;
+    min-height: 638px;
+	margin-top: 14%;
+}
+
+.photo .photo-thumbnail {
+    width: 182.4px;
+    float: left;
+    margin-left: 12px;
+    margin-bottom: 36px;
+}
+
+.photo .photo-thumbnail img {
+    max-width: 100%;
+    height: 250px;
+}
+
+.photo p.number {
+	font-weight: 300;
+    margin: 0;
+    font-size: 14px;
+}
+
+.photo .legend {
+    width: 182.4px;
+    margin-right: 194.4px;
+    margin-bottom: 12px;
+    float: left;
+}
+
+.photo .legend p {
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.photo .legend p.description {
+    font-family: 'Lato';
+    font-size: 15px;
+}
+
+.photo .legend p.date {
+    margin-bottom: 15px;
+}

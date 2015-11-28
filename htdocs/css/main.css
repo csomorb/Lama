@@ -1,0 +1,182 @@
+/*
+    Grid : (182.4 + 12) * 4 + 182.4
+*/
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato';
+}
+
+a {
+    color: black;
+    font-family: 'Lato';
+    text-decoration: none;
+}
+
+#present {
+	background-color: white;
+	text-align: center;
+	font-weight: 900;
+	position: fixed;
+	font-size: 50px;
+	display: block;
+	z-index: 1001;
+	height: 100%;
+	padding: 15%;
+	width: 70%;
+}
+
+#logo_lama {
+	position: absolute;
+	width: 160px;
+}
+
+.green {
+    color: rgb(0, 255, 211);
+}
+
+/* Page */
+.page {
+    max-width: 990px;
+    margin: 0 auto;
+	margin-top: -42px;
+}
+
+.titre{
+	max-height: 250px;
+}
+
+/* Navbar */
+.title {
+    position: relative;
+    z-index: 1000;
+	top: -280px;
+    width: 188px;
+    margin-top: 70px;
+	line-height: 34px;
+	font-size: 28px;
+}
+
+.navbar {
+    width: 100%;
+    position: relative;
+    background: white;
+    right: 0;
+    top: 80px;
+    z-index: 1000;
+}
+
+.menu {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.menu ul {
+    float: right;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style-type: none;
+	width: 75px;
+	text-align:center;
+}
+
+.navbar li a {
+    padding: 5px;
+	font-weight: 300;
+    transition: color .1s ease-in-out;
+}
+
+.navbar li a.active {
+    color: #000;
+	border: black 1px solid;
+	font-weight: 400;
+}
+
+.docs {
+	position: absolute;
+	right: -12%;
+	top: 20%;
+}
+
+.docs img {
+	width: 26px;
+	margin-right: 10px;
+}
+
+/* Contact */
+
+.contact {
+    font-family: 'Lato';
+    margin-top: 21%;
+	margin-bottom: -86px;
+}
+
+.contact h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 45px;
+    line-height: 20px;
+}
+
+.contact h1 a {
+    color: black;
+    font-family: 'Lato';
+}
+
+.contact .contact-left {
+    float: left;
+    width: 778px;
+}
+
+.contact .contact-right {
+    float: left;
+    width: 182px;
+}
+
+.contact a.cv {
+    font-family: 'Lato';
+    text-transform: uppercase;
+    font-size: 25px;
+    color: black;
+}
+
+/* Slider */
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+.slick-next.next-arrow, .slick-prev.prev-arrow {
+    height: auto;
+    bottom: 5px;
+    top: inherit;
+    width: 25px;
+    right: -35px;
+}
+
+.slick-prev.prev-arrow {
+    left: -35px;
+    right: inherit;
+}
+
+.slick-next.next-arrow.slick-disabled, .slick-prev.prev-arrow.slick-disabled {
+    opacity: 0.1;
+    cursor: default;
+}
+
+/* Utils */
+.clearfix {
+    clear: both;
+}

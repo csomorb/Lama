@@ -1,0 +1,238 @@
+.cadre_projet{
+	position: relative;
+    left: 378.8px;
+	top: -74px;
+}
+
+.titre-page {
+	font-family: 'Playfair Display', serif;
+	font-size: 115px;
+	font-weight: 900;
+	position: relative;
+	top: -240px;
+	left: 445px;
+	max-height: 1px;
+}
+
+.projets .project-navigation {
+    margin-bottom: 12px;
+	margin-top: -150px;
+}
+
+.projets .project-navigation .slick-list {
+    padding-left: 20px;
+    margin-left: -20px;
+}
+
+.projets .project-navigation-item {
+    margin-right: 12px;
+    position: relative;
+    height: 140px;
+}
+
+.projets .project-navigation-item-inside {
+    position: absolute;
+    bottom: 0;
+}
+
+.projets .project-navigation-selected:before {
+    display: block;
+	width: 100%;
+	height: 5px;
+	content: '';
+	background: black;
+	position: relative;
+	top: 147px;
+	z-index: 999;
+}
+
+.projets .project-navigation-item h3 {
+    font-family: 'din-boldregular';
+    text-transform: uppercase;
+    line-height: 16px;
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.projets .project-navigation-item p {
+    margin: 0;
+}
+
+.projets .project-navigation-item p.date {
+    font-family: 'din-boldregular';
+}
+
+.projets .project-navigation-item p.medium {
+    color: #888;
+}
+
+.main-photos {
+    position: relative;
+}
+
+.main-photos img.main-photo {
+    width: 100%;
+}
+
+.main-photos img.next-photo, img.fake-photo {
+    width: 960px;
+    position: absolute;
+    left: 1000px;
+    top: 0;
+}
+
+.main-photos img.next-photo:hover {
+    cursor: pointer;
+}
+
+.projets .project-description {
+    margin-bottom: 50px;
+}
+
+.projets .project-description .blue-circle div {
+    z-index: 0;
+    background-size: 110px;
+    left: -75px;
+    top: -25px;
+}
+
+.para{
+    -moz-column-width: 182.4px; /* Firefox */
+    column-width: 182.4px;
+	-webkit-column-width: 182.4px; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+	font-size: 15px;
+}
+
+.premier{
+	font-size: 146px;
+	font-family: 'Playfair Display', serif;
+	line-height: 100px;
+}
+
+.projets .project-description h2 {
+    font-size: 80px;
+    line-height: 66px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+    position: relative;
+    max-width: 1000px;
+    margin-left: -90px;
+    margin-top: -45px;
+    margin-bottom: 95px;
+    z-index: 10;
+}
+
+.projets .project-description h2:after {
+	display: block;
+	content: '';
+	width: 196px;
+	height: 8px;
+	background: #000;
+	position: relative;
+	top: 20px;
+	left: 90px;
+}
+
+.projets .project-description .col-1-left {
+    width: 182.4px;
+    margin-right: 1px;
+    float: left;
+	padding-right: 15px;
+	font-size: 15px;
+	padding-left: 0px;
+	padding-top: 5px;
+	padding-bottom: 29px;
+	border: 1px solid black;
+	border-left-style: none;
+	border-top-style: none;
+	border-bottom-style: none;
+}
+
+.trait {
+	border: 1px solid black;
+	width: 600px;
+	max-height:0px;
+	position: relative;
+	margin-left: -402px;
+	border-left-style: none;
+	border-right-style: none;
+	border-top-style: none;
+}
+
+.trait2 {
+	border: 1px solid black;
+	width: 600px;
+	max-height:0px;
+	margin-top: -50px;
+	margin-bottom: 50px;
+	position: relative;
+	margin-left: -402px;
+	border-left-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+}
+
+.projets .project-description .col-3-right {
+	position: relative;
+	padding-left: 376.4px;
+}
+
+.projets .project-description hr {
+    width: 182.4px;
+    margin-left: 0;
+    border-style: solid;
+    border-width: 3px;
+    border-top: none;
+}
+
+.projets .project-description .notes {
+    color: #888;
+}
+
+.project-description h3 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.project-description h4{
+	margin: 0px;
+	padding-top: 10px;
+}
+
+.project-description h3{
+    margin: 0;
+}
+
+.project-description p {
+    margin: 0;
+}
+
+.project-images img {
+	width: 765px;
+	margin-left: 95px;
+    margin-bottom: 12px;
+}
+
+.projets .projet-suivant {
+	position: absolute;
+	margin-top: 20px;
+	right: -2px;
+	width: 70px;
+	height: 80px;
+	border: 1px solid black;
+}
+
+.projets .projet-suivant p {
+	font-family: din-blackregular;
+	position: relative;
+	right: 20px;
+}
+
+.projets .projet-suivant img {
+	width: 25px;
+	position: relative;
+	top: 20px;
+}

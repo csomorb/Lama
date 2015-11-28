@@ -1,0 +1,127 @@
+.journal .header img {
+    z-index: 1;
+    left: 302px;
+    height: 144px;
+}
+
+.journal .right-col {
+    margin-left: 770px;
+}
+
+.journal .subtitle {
+    margin-top: -96px;
+    position: relative;
+    z-index: 10;
+}
+
+.journal .subtitle h2 {
+    width: 182px;
+    margin-bottom: 0px;
+    font-family: 'din-blackregular';
+}
+
+.journal hr {
+    width: 100px;
+    height: 4px;
+    background: black;
+    margin-left: 0;
+    border: none;
+}
+
+.journal .rotate {
+    font-size: 47px;
+    text-transform: uppercase;
+    font-family: 'din-blackregular';
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    width: 370px;
+    position: relative;
+    right: 241px;
+    top: 78px;
+    line-height: 45px;
+}
+
+.journal .intro {
+    width: 564px;
+    margin-top: -221px;
+}
+
+.journal .intro h2 {
+    margin-bottom: -11px;
+    font-family: 'din-blackregular';
+}
+
+.journal .intro p {
+    font-family: 'din-boldregular';
+}
+
+.journal .post {
+    margin-bottom: 30px;
+}
+
+.journal .post img {
+    width: 761px;
+}
+
+.journal .post .right-col {
+    position: absolute;
+    width: 187px;
+    margin-top: -1118px;
+}
+
+.journal .post h1 {
+    font-family: 'din-blackregular';
+    font-size: 84px;
+    margin-bottom: -24px;
+}
+
+.journal .post h2 {
+    font-family: 'din-blackregular';
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: -17px;
+}
+
+.journal .post h3 {
+    font-family: 'din-blackregular';
+    font-size: 15px;
+    margin-bottom: -13px;
+}
+
+.journal .post p {
+    font-family: 'din-mediumregular';
+    font-size: 14px;
+    margin-bottom: -13px;
+}
+
+.journal .post .made-of {
+    color: #6d6e71;
+    margin-bottom: 11px;
+}
+
+.journal .post2 .right-col {
+    margin-top: -606px;
+}
+
+.journal .post1 {
+    margin-bottom: 62px;
+}
+
+.journal .pagination {
+    margin-bottom: 270px;
+}
+
+.journal .pagination p {
+    color: #808285;
+}
+
+.journal .pagination .active {
+    color: black;
+}
+
+.journal .pagination img {
+    width: auto;
+    position: relative;
+    top: -60px;
+    left: 692px;
+}

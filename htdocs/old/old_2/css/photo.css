@@ -1,0 +1,53 @@
+.photo .main-photo img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.photo .main-photo {
+    margin-bottom: 100px;
+    min-height: 638px;
+}
+
+.photo .photo-thumbnail {
+    width: 182.4px;
+    float: left;
+    margin-left: 12px;
+    margin-bottom: 36px;
+}
+
+.photo .photo-thumbnail img {
+    max-width: 100%;
+    height: 250px;
+}
+
+.photo p.number {
+    color: gray;
+    margin: 0;
+    font-size: 14px;
+}
+
+.photo .legend {
+    width: 182.4px;
+    margin-right: 194.4px;
+    margin-bottom: 12px;
+    float: left;
+}
+
+.photo .legend p {
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.photo .legend p.description {
+    font-family: "din-boldregular";
+    font-size: 15px;
+}
+
+.photo .legend p.date {
+    margin-bottom: 15px;
+}
+
+.photo .slick-prev:before, .photo .slick-next:before {
+    color: black;
+}

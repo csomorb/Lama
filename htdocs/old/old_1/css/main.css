@@ -1,0 +1,194 @@
+@import "../fonts/stylesheet.css";
+
+/*
+    Grid : (182.4 + 12) * 4 + 182.4
+*/
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "din-regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "din-boldregular";
+}
+
+a {
+    color: black;
+    font-family: 'din-mediumregular';
+    text-decoration: none;
+}
+
+.hidden-title {
+    display: none;
+}
+
+.green {
+    color: rgb(0, 255, 211);
+}
+
+/* Page */
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.title {
+    position: relative;
+    z-index: 1000;
+    width: 50%;
+    margin-bottom: -50px;
+}
+
+.title img {
+    width: 180px;
+    background: white;
+    padding-top: 20px;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    background: white;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.menu .menu-title {
+    float: left;
+    margin: 8px 0;
+    margin-bottom: 0;
+}
+
+.menu .menu-title a img {
+    width: 70px;
+}
+
+.menu ul {
+    float: right;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+.navbar li a {
+    color: #888;
+    padding: 5px;
+}
+
+.navbar li a:hover {
+    color: #333;
+}
+
+.navbar li a.active {
+    color: #000;
+    font-weight: 500;
+}
+
+
+/* Contact */
+.contact {
+    font-family: "din-boldregular";
+    margin-top: 50px;
+}
+
+.contact h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 45px;
+    line-height: 20px;
+}
+
+.contact h1 a {
+    color: black;
+    font-family: "din-boldregular";
+}
+
+.contact .contact-left {
+    float: left;
+    width: 778px;
+}
+
+.contact .contact-right {
+    float: left;
+    width: 182px;
+}
+
+.contact a.cv {
+    font-family: "din-boldregular";
+    text-transform: uppercase;
+    font-size: 25px;
+    color: black;
+}
+
+.contact .blue-circle div {
+    top: -5px;
+    background-size: 41px;
+    left: -13px;
+}
+
+/* Page header */
+header.header img {
+    height: 105px;
+    position: relative;
+    left: 451px;
+}
+
+/* Slider */
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+.slick-next.next-arrow, .slick-prev.prev-arrow {
+    height: auto;
+    bottom: 5px;
+    top: inherit;
+    width: 25px;
+    right: -35px;
+}
+
+.slick-prev.prev-arrow {
+    left: -35px;
+    right: inherit;
+}
+
+.slick-next.next-arrow.slick-disabled, .slick-prev.prev-arrow.slick-disabled {
+    opacity: 0.1;
+    cursor: default;
+}
+
+/* Utils */
+.clearfix {
+    clear: both;
+}
+
+.blue-circle {
+    position: relative;
+}
+
+.blue-circle div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    z-index: -1;
+    background: url(/img/rond.png) no-repeat;
+    background-size: 50px;
+}

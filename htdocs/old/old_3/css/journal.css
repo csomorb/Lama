@@ -1,0 +1,137 @@
+.title-journal{
+	font-family: 'Playfair Display', serif;
+	font-size: 115px;
+	font-weight: 900;
+	position: relative;
+	top: -240px;
+	left: 430px;
+	max-height: 1px;
+	margin-bottom: -152px;
+}
+
+.cadre_journal{
+	position: relative;
+    left: 376.8px;
+	top: -74px;
+}
+
+.journal .right-col {
+    margin-left: 770px;
+}
+
+.journal .subtitle {
+    margin-top: -190px;
+    position: relative;
+    z-index: 10;
+}
+
+.journal .subtitle h2 {
+    width: 182px;
+    margin-bottom: 0px;
+    font-family: 'din-blackregular';
+}
+
+.journal hr {
+    width: 100px;
+    height: 4px;
+    background: black;
+    margin-left: 0;
+    border: none;
+}
+
+.journal .rotate {
+    font-size: 47px;
+    text-transform: uppercase;
+    font-family: 'din-blackregular';
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    width: 370px;
+    position: relative;
+    right: 241px;
+    top: 78px;
+    line-height: 45px;
+}
+
+.journal .debut {
+	width: max-width;
+	margin-top: -30px;
+}
+
+.journal .intro {
+    width: 564px;
+    margin-top: -150px;
+}
+
+.journal .intro h2 {
+    margin-bottom: -11px;
+    font-family: 'din-blackregular';
+}
+
+.journal .intro p {
+    font-family: 'din-boldregular';
+}
+
+.journal .post {
+    margin-bottom: 30px;
+}
+
+.journal .post img {
+    width: 761px;
+	
+}
+
+.journal .post .right-col {
+    position: relative;
+	max-height: 0px;
+    width: 187px;
+	top: -10px;
+}
+
+.journal .post h1 {
+    font-family: 'din-blackregular';
+    font-size: 70px;
+    margin-bottom: -19px; 
+}
+
+.journal .post h2 {
+    font-family: 'din-blackregular';
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: -14px; 
+}
+
+.journal .post h3 {
+    font-family: 'din-boldregular';
+    font-size: 14px;
+    margin-bottom: -17px; 
+}
+
+.journal .post p {
+    font-family: 'din-mediumregular';
+    font-size: 14px;
+    margin-bottom: -13px;
+}
+
+.journal .post .made-of {
+    color: #6d6e71;
+    margin-bottom: 11px;
+}
+
+.journal .pagination {
+    margin-bottom: 270px;
+}
+
+.journal .pagination p {
+    color: #808285;
+}
+
+.journal .pagination .active {
+    color: black;
+}
+
+.journal .pagination img {
+    width: auto;
+    position: relative;
+    top: -60px;
+    left: 692px;
+}

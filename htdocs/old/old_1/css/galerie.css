@@ -1,0 +1,68 @@
+.galerie img.photo-big {
+    width: 1160px;
+    margin-left: -100px;
+    margin-right: -100px;
+    margin-bottom: 6px;
+}
+
+.galerie .header {
+    display: table-cell;
+    padding-bottom: 100px;
+    width: 960px;
+    position: relative;
+}
+
+.galerie .header img {
+    left: 379px;
+}
+
+.galerie .header .quote {
+    width: 365px;
+    font-size: 30px;
+    line-height: 31px;
+    font-family: "din-blackregular";
+    margin-top: 42px;
+}
+
+.galerie .header .quote .blue-circle div {
+    left: -10px;
+}
+
+.galerie .header .quote .author {
+    font-size: 14px;
+    font-family: "din-regularregular";
+}
+
+.galerie .header h2 {
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.galerie .header h3 {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.galerie .header p {
+    margin: 0;
+    font-family: "din-regularregular";
+}
+
+.galerie .header .col {
+    min-width: 182.4px;
+    width: 182.4px;
+    margin-right: 12px;
+    margin-top: 30px;
+
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.galerie .header .col.last-col {
+    margin-right: 0;
+    position: absolute;
+    top: 42px;
+    right: 0;
+}

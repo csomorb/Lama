@@ -1,0 +1,6 @@
+AuthType Basic
+AuthName "Modifier Lama Autentification"
+AuthUserFile /srv/data/web/vhosts/lamagence.fr/access/.htpasswd
+<limit GET POST>
+require valid-user
+</limit>
