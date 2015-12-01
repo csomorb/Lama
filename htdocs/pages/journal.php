@@ -107,7 +107,7 @@ jQuery(document).ready(function($) {
 });
 
 $(document).ready(function(){   
-    var show_per_page = 30;    
+    var show_per_page = 60;    
     var number_of_items = $('#content').children().size();   
     var number_of_pages = Math.ceil(number_of_items/show_per_page);   
     $('#current_page').val(0);  
@@ -119,12 +119,14 @@ $(document).ready(function(){
         navigation_html += '<a class="page_link" href="javascript:go_to_page(' + current_link +')" longdesc="' + current_link +'">'+ (current_link + 1) +'</a>';  
         current_link++;  
     }  
-    navigation_html += '<a class="next_link" href="javascript:next();"><img src="img/next.png" class="fleche_journal"></a>';  
-    $('#page_navigation').html(navigation_html);   
-    $('#page_navigation .page_link:first').addClass('active_page');   
-    $('#content').children().css('display', 'none');   
-    $('#content').children().slice(0, show_per_page).css('display', 'block'); 
-    fadeprev(); 
+    navigation_html += '<a class="next_link" href="javascript:next();"><img src="img/next.png" class="fleche_journal"></a>'; 
+    if(number_of_pages > 1) { 
+    	$('#page_navigation').html(navigation_html);   
+    	$('#page_navigation .page_link:first').addClass('active_page');   
+    	$('#content').children().css('display', 'none');   
+    	$('#content').children().slice(0, show_per_page).css('display', 'block'); 
+    	fadeprev(); 
+	}
 });  
   
 function previous(){  

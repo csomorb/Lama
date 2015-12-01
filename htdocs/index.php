@@ -8,7 +8,7 @@
     }
     $querystring = htmlspecialchars($_SERVER['QUERY_STRING']);
     if (empty($querystring)) {
-        $params = "journal";
+        $params = "projets";
 		$acc = true;
     }
     else {
