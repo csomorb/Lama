@@ -8,6 +8,10 @@
 	max-height: 0px;
 }
 
+.slick-slide img{
+	min-width: 100%;
+}
+
 .cadre_photo{
 	position: relative;
     left: 376.8px;
@@ -20,15 +24,26 @@
 
 .photo .main-photo img {
     max-width: 100%;
-    max-height: 637px;
+    max-height: auto;
     margin: 0 auto;
     background: #fff;
 }
 
 .photo .main-photo {
     margin-bottom: 100px;
-    min-height: 638px;
-	margin-top: 14%;
+ /*   min-height: 638px;*/
+}
+
+
+@media (max-width: 767px) {
+	.slick-next.next-arrow{
+		bottom: -25px;
+		right: 0px;
+	}
+	.slick-prev.prev-arrow {
+		bottom: -25px;
+		left: 0px;
+	}
 }
 
 .photo .photo-thumbnail {
@@ -52,6 +67,7 @@
 .photo .legend {
     width: 182.4px;
     margin-right: 194.4px;
+	margin-left: 15px;
     margin-bottom: 12px;
     float: left;
 }
@@ -69,4 +85,43 @@
 
 .photo .legend p.date {
     margin-bottom: 15px;
+}
+
+/*Responsive*/
+@media (min-width: 768px) {
+	.photo .legend{
+		margin-right: -30px;
+		margin-left: 0px;
+	}
+	.petit_ecran{
+	  display:none;
+	}
+}
+
+@media (min-width: 992px) {
+  .photo .legend{
+		margin-left: 15px;
+		margin-right: 182px;
+	}
+}
+
+@media (min-width: 1200px) {
+  .photo .legend{
+		margin-left: 15px;
+		margin-right: 382px;
+	}
+}
+/*On cache le grand écran quand on passe en petit*/
+@media (max-width: 768px) {
+  .grand_ecran{
+	  display:none;
+  }
+}
+
+.petit_ecran{
+	margin-left:-12px;
+}
+
+.petit_ecran .description{
+	margin-bottom:0px;
 }

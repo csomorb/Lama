@@ -1,9 +1,9 @@
 .journal .bloc-journal {
-	margin-top: 90px;
+/*	margin-top: 90px;*/
 	display: flex;
 	flex-direction: row;
 	flex-wrap:wrap;
-	justify-content:center;
+	justify-content:space-around;
 	width: 100%;
 }
 
@@ -11,26 +11,32 @@
 .flex_journal{
 	width: 300px;
 	height: 200px;
-	padding: 15px;
+/*	padding: 15px;*/
+	margin-top: 20px;
 }
 
 .journal .article{
 	border: 3px solid black;
-	padding: 15px;
-	width: 264px;
-	height: 164px;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 300px;
+	min-height: 200px;
 }
 
 .journal .date {
-	margin-bottom: -30px;
-	margin-top: -18px;
+	margin-bottom: -10px;
+	margin-top: 5px;
 	font-weight: 800;
 }
 
 .journal .text {
 	overflow: hidden;
 	font-weight: 300;
-	height: 142px;
+	min-height: 135px;
+}
+
+.journal .text p{
+	margin-bottom: 0px;
 }
 
 .journal .nu {

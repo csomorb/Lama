@@ -12,6 +12,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     width: 100%;
+	color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,24 +35,50 @@ a {
 	z-index: 1001;
 	height: 100%;
 	padding: 15%;
-	width: 70%;
+	width: 100%;
 }
 
 #logo_lama {
-	position: absolute;
-	width: 160px;
+	width: 120px;
+	height: auto;
 }
+
+a:hover{
+	text-decoration:none;
+	color:black;
+}
+
 
 .green {
     color: rgb(0, 255, 211);
 }
-
-/* Page */
+/** modif********************************************************/
+ 
 .page {
-    max-width: 990px;
     margin: 0 auto;
-	margin-top: -42px;
+	/*margin-top: -42px;*/
 }
+
+
+@media (min-width: 768px) {
+  .page {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page {
+    width: 1170px;
+  }
+}
+
+
 
 .titre{
 	max-height: 250px;
@@ -68,60 +95,12 @@ a {
 	font-size: 28px;
 }
 
-.navbar {
-    width: 100%;
-    position: relative;
-    background: white;
-    right: 0;
-    top: 80px;
-    z-index: 1000;
-}
-
-.menu {
-    width: 960px;
-    margin: 0 auto;
-}
-
-.menu ul {
-    float: right;
-}
-
-.navbar li {
-    display: inline-block;
-    list-style-type: none;
-	width: 75px;
-	text-align:center;
-}
-
-.navbar li a {
-    padding: 5px;
-	font-weight: 300;
-    transition: color .1s ease-in-out;
-}
-
-.navbar li a.active {
-    color: #000;
-	border: black 1px solid;
-	font-weight: 400;
-}
-
-.docs {
-	position: absolute;
-	right: -12%;
-	top: 20%;
-}
-
-.docs img {
-	width: 26px;
-	margin-right: 10px;
-}
 
 /* Contact */
 
 .contact {
     font-family: 'Lato';
-    margin-top: 80px;
-	margin-bottom: -86px;
+	padding-bottom: 50px;
 }
 
 .contact h1 {
@@ -152,6 +131,13 @@ a {
     font-size: 25px;
     color: black;
 }
+/**contact responsive*/
+@media (max-width: 768px) {
+  .contact h1 {
+    font-size: 7vw;
+    line-height: 40%;
+  }
+}
 
 /* Slider */
 .slick-prev:before, .slick-next:before {
@@ -179,4 +165,106 @@ a {
 /* Utils */
 .clearfix {
     clear: both;
+}
+
+/**----------NAVBAR----------**/
+.picto_menu{
+	width: 26px;
+	height: auto;
+}
+.navbar li {
+	padding-right: 15px;
+	text-align:center;
+}
+.navbar li a {
+    padding: 5px;
+	font-weight: 300;
+    transition: color .1s ease-in-out;
+}
+
+.navbar li a.active {
+    color: #000;
+	border: black 1px solid;
+	font-weight: 400;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  margin-top: 30px;
+}
+.navbar-default .navbar-brand {
+  color: #000000;
+  margin-top: -20px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #000000;
+}
+.navbar-default .navbar-text {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #000000;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #000000;
+}
+.navbar-default .navbar-link {
+  color: #000000;
+}
+.navbar-default .navbar-link:hover {
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+  }
+  .navbar-default{
+	  margin-top: 0px;
+  }
+  .navbar-default .navbar-brand{
+	margin-top: -3px;  
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #000000;
+    background-color: #ffffff;
+  }
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
 }
