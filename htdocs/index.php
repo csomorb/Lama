@@ -23,6 +23,19 @@
     <title>LAMA</title>
     <meta charset="utf-8">
     <meta description="Lama est une agence graphique de taille humaine, précisément 1m77, fondée par Baptiste Plantin.">
+<!-- modif -->
+	
+	 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- fin modif --->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.7/slick.css"/>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700italic,900,700,400italic,300italic,100italic,300,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="<?php echo SITE_ROOT; ?>css/main.css">
@@ -39,23 +52,47 @@
 		echo "</div>\n";
 	}
 ?>
-    <div class="page">
-        <div class="navbar">
-			<a href="<?php echo SITE_ROOT; ?>projets"><img src="img/logo.png" id="logo_lama"></a>
-            <div class="menu">
-                <ul>
-                    <li><a href="<?php echo SITE_ROOT; ?>projets" <?php if ($folder == "projets") { echo "class='active'"; } ?> >projets</a></li>
+	<nav class="navbar navbar-default">
+	  <div class="container">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+		  <a class="navbar-brand" href="<?php echo SITE_ROOT; ?>projets"><img src="img/logo.png" id="logo_lama"></a>
+		</div>
+		 <div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav navbar-right">
+					<li><a href="<?php echo SITE_ROOT; ?>projets" <?php if ($folder == "projets") { echo "class='active'"; } ?> >projets</a></li>
                     <li><a href="<?php echo SITE_ROOT; ?>photo"   <?php if ($folder == "photo")   { echo "class='active'"; } ?> >photo</a></li>
                     <li><a href="<?php echo SITE_ROOT; ?>journal" <?php if ($folder == "journal") { echo "class='active'"; } ?> >journal</a></li>
-                    <li style="margin-left:10px;"><a href="#" id="contact-link">contact</a></li>
+                    <li><a href="#" id="contact-link">contact</a></li>
+					<li><a href="https://www.behance.net/lamagence" target="_blank"><img src="/img/behance.png" class="picto_menu"></a></li>
+					<li><a href="<?php echo SITE_ROOT; ?>files/CV.pdf" target="_blank"><img src="/img/cv.png" class="picto_menu"></a></li>
+      </ul>
+	  </div>
+	  </div>
+	</nav>
+
+    <div class="container">
+    <!--    <div class="navbar">
+		<!--	<a href="<?php //echo SITE_ROOT; ?>projets"><img src="img/logo.png" id="logo_lama"></a>
+            <div class="menu">
+                <ul>
+                    <li class="menu_item"><a href="<?php echo SITE_ROOT; ?>projets" <?php if ($folder == "projets") { echo "class='active'"; } ?> >projets</a></li>
+                    <li class="menu_item"><a href="<?php echo SITE_ROOT; ?>photo"   <?php if ($folder == "photo")   { echo "class='active'"; } ?> >photo</a></li>
+                    <li class="menu_item"><a href="<?php echo SITE_ROOT; ?>journal" <?php if ($folder == "journal") { echo "class='active'"; } ?> >journal</a></li>
+                    <li class="menu_item" style="margin-left:10px;"><a href="#" id="contact-link">contact</a></li>
+					<li class="liste_menu"><a href="#" id="menu_liste"><img src="/img/liste.png" class="liste_menu"></a></li>
                 </ul>
             </div>
 			<div class="docs">
 				<a href="https://www.behance.net/lamagence" target="_blank"><img src="/img/behance.png"></a>
-				<a href="<?php echo SITE_ROOT; ?>files/CV.pdf" target="_blank"><img src="/img/cv.png"></a>
+				<a href="<?php //echo SITE_ROOT; ?>files/CV.pdf" target="_blank"><img src="/img/cv.png"></a>
 			</div>
             <div class="clearfix"></div>
-        </div>
+        </div> -->
         <div class="contact" style="display:none;">
             <div class="contact-left">
                 <h1>Baptiste Plantin</h1>
@@ -74,8 +111,8 @@
             }
         ?>
     </div>
-</body>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body> <!--
+<script type="text/javascript" src="jquery-1.12.1.min.js"></script>-->
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.7/slick.min.js"></script>
 <script type="text/javascript">
 function change() {
@@ -85,10 +122,34 @@ setTimeout(change, 3000);
 </script>
 <script data-cfasync='false'>
 $(document).ready(function () {
+	$('#menu_liste').click(function(){
+		console.log("boum");
+		$('#logo_lama').toggle(function() { 
+			if ($('#logo_lama').is(':visible')){ $('.menu_item').hide(); }
+			else if ($('#logo_lama').is(':hidden')) { $('.menu_item').show();}
+		});
+	});
+	
     $("#contact-link").on("click", function (event) {
         $(".contact").toggle(100);
     });
 
+	$("#display_carre").on("click",function(event){
+		$("#project-navigation2").toggle();
+		$("#project-navigation").hide();
+		$("#display_normal").show();
+		$("#display_carre").hide();
+	});
+	
+	$("#display_normal").on("click",function(event){
+		$("#deb").show();
+		$("#project-navigation2").hide();
+		$("#display_normal").hide();
+		$("#display_carre").show();
+		$("#project-navigation").show();
+	});
+	
+	
     $(".photo-thumbnail>a>img").on("click", function (event) {
         var mainPhotoDiv = $('.main-photo');
         var images = $(this).data("images").split(" ");
@@ -127,6 +188,7 @@ $(document).ready(function () {
             displayNavigation(data);
             displayProject(data, 0, true);
             loadAllImages(data);
+			displayNavigation2(data);
         }).error(function (data, error) {
             console.log("Something went wrong:", error);
         });
@@ -150,12 +212,51 @@ $(document).ready(function () {
         });
     }
 
+	function displayNavigation2(data) {
+		var projectId;
+        var template =
+        '<div class="carre">' +
+        '    <a class="project-navigation-item-inside2" href="#" data-projectid="{projectId}">' +
+		'        <img src="/img/projets/{main_image}" class="img-responsive">' +
+        '        <h3>{title}</h3>' +
+        '        <p class="medium">{medium}</p>' +
+        '    </a>' +
+        '</div>';
+		
+	/*	$("#project-navigation2").empty();
+        $('#project-navigation2').unslick();
+	*/	
+		for (projectId in data) {
+            project = data[projectId];
+            html = template
+                .replace("{projectId}", projectId)
+                .replace("{title}", project["title"])
+                .replace("{medium}", project["medium"])
+                .replace("{main_image}", project["main_image"]);
+            $("#project-navigation2").append(html);
+        }
+		
+		$(".project-navigation-item-inside2").on("click", function (event) {
+            event.preventDefault();
+			$("#deb").show();
+			$('#project-navigation2').hide();
+			$('#project-navigation').hide();
+			$("#display_carre").show();
+			$("#display_normal").hide();
+            displayProject(data, $(this).data("projectid"));
+        })
+		
+		$("#project-navigation2").hide();
+		$("#display_normal").hide();
+	//	$("#deb").hide();
+	}
+	
+	
     function displayNavigation(data) {
         var projectId;
         var template =
         '<div class="project-navigation-item">' +
         '    <a class="project-navigation-item-inside" href="#" data-projectid="{projectId}">' +
-        '        <div class="blue-circle"><div></div></div>' +
         '        <h3>{title}</h3>' +
         '        <p class="description">{short_description}</p>' +
         '        <p class="medium">{medium}</p>' +
@@ -227,7 +328,7 @@ $(document).ready(function () {
         $("#project-images").empty();
         for (imgId in project["images"]) {
             imgSrc = imgDir + project["images"][imgId];
-            $("#project-images").append("<img src='" + imgSrc + "'' class='project-image'>");
+            $("#project-images").append("<img src='" + imgSrc + "'' class='project-image img-responsive'>");
         }
     }
 
