@@ -107,7 +107,7 @@ jQuery(document).ready(function($) {
 });
 
 $(document).ready(function(){   
-    var show_per_page = 60;    
+    var show_per_page = 30;    
     var number_of_items = $('#content').children().size();   
     var number_of_pages = Math.ceil(number_of_items/show_per_page);   
     $('#current_page').val(0);  
